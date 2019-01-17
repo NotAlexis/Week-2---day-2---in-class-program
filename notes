@@ -1,0 +1,70 @@
+/*
+Filename day4_if_age.cpp
+Desc: Demo of if conditional structure
+Author: Alexis
+Date: 1/17/19
+*/
+
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main ()
+
+{
+    //Variables
+
+    int age;
+
+
+    //input
+
+    cout << "How old are you? " ;
+    cin >> age;
+
+    //process & output
+
+    /*
+    if (age <= 0)
+        cout << "Too young";
+    else if (age > 110)
+        cout << "Too old";
+    else
+        cout << "Just right baby";
+*/
+
+    /*
+if (age >= 0 && age <= 100)
+    cout << "Valid";
+else
+    cout << "Invalid";
+
+*/
+char gender;
+string state;
+
+if (age == 25 && gender == 'f' && state == "OR")
+{
+    cout << "You have finished college.\n\n"
+        << "Car insurance is cheaper!\n\n";
+
+}
+else if (age < 25)
+{
+    cout << "You might still be in college\n"
+        << "You are paying wayy too much for car insurance\n\n";
+}
+else if (age <16)
+{
+    cout << "You cannot drive yet\n";
+}
+
+else {
+    cout << "you have cheap insurance";
+}
+
+
+
+    return 0;
+}
